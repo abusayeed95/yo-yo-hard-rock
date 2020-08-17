@@ -20,14 +20,12 @@ function searchButtonWork() {
                     document.getElementById(`artist-name-${i}`).innerHTML = `Artist: <span id="artist-${i}">${artist}</span>`;
                 }
             })
-            .catch(error => console.log(error));
     }
 }
 
 function getLyrics() {
-
     for (let i = 0; i <= 9; i++) {
-        document.getElementById(`lyrics-area-${i}`).style.display = "block";
+        document.getElementById(`lyrics-area-${i}`).style.display = "none";
         const artist = document.getElementById(`artist-${i}`).innerText;
         const songTitle = document.getElementById(`song-title-${i}`).innerText;
 
@@ -47,4 +45,7 @@ function getLyrics() {
 
             })
     }
+}
+function showLyrics(id) {
+    document.getElementById(id).style.display = 'block';
 }
