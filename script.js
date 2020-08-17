@@ -33,11 +33,10 @@ function getLyrics() {
             .then(res => res.json())
             .then(data => {
                 const lyrics = data.lyrics;
-
                 document.getElementById(`lyrics-area-${i}`).innerHTML = `
                 <h2 class="text-success">Lyrics of ${songTitle}</h2>
                 <pre id="lyric-${i}">${lyrics}</pre>
-                <button class="btn btn-primary">Hide Lyrics</button>
+                <button class="btn btn-primary" onclick="hideLyrics('lyrics-area-${i}')"><a href="#" class="text-white">Hide Lyrics</a></button>
                 `
                 if (document.getElementById(`lyric-${i}`).innerText == "undefined") {
                     document.getElementById(`lyrics-area-${i}`).style.display = "none";
@@ -48,4 +47,7 @@ function getLyrics() {
 }
 function showLyrics(id) {
     document.getElementById(id).style.display = 'block';
+}
+function hideLyrics(id) {
+    document.getElementById(id).style.display = 'none';
 }
