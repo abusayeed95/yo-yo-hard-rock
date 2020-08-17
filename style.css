@@ -53,6 +53,10 @@ body {
     display: none;
 }
 
+.lyrics a {
+    text-decoration: none;
+}
+
 #results {
     display: none;
 }
