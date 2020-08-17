@@ -15,9 +15,9 @@ function searchButtonWork() {
                     const songTitle = details.title;
                     const artist = details.artist.name;
                     const albumTitle = details.album.title;
-                    document.getElementById(`song-title-${i}`).innerHTML = `${songTitle}`;
-                    document.getElementById(`song-album-${i}`).innerHTML = `Album: ${albumTitle}`;
-                    document.getElementById(`artist-name-${i}`).innerHTML = `Artist: <span id="artist-${i}">${artist}</span>`;
+                    document.getElementById(`song-title-${i}`).innerHTML = `<span class="text-primary">${songTitle}</span>`;
+                    document.getElementById(`song-album-${i}`).innerHTML = `<span class="font-weight-bold text-info">Album:</span> <span class="text-info">${albumTitle}</span>`;
+                    document.getElementById(`artist-name-${i}`).innerHTML = `<span class="font-weight-bold text-info">Artist:</span> <span class="text-info" id="artist-${i}">${artist}</span>`;
                 }
             })
     }
@@ -39,7 +39,7 @@ function getLyrics() {
                 <button class="btn btn-primary" onclick="hideLyrics('lyrics-area-${i}')"><a href="#" class="text-white">Hide Lyrics</a></button>
                 `
                 if (document.getElementById(`lyric-${i}`).innerText == "undefined") {
-                    document.getElementById(`lyrics-area-${i}`).style.display = "none";
+                    document.getElementById(`lyrics-area-${i}`).innerHTML = "<p class='text-warning font-italic'> There is no Lyrics for this song...<p>";
                 }
 
             })
