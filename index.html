@@ -48,14 +48,126 @@
             <div class="search-bar col-md-6 mx-auto">
                 <h1 class="text-center">Lyrics Search</h1>
                 <div class="search-box my-5">
-                    <input type="text" class="form-control" placeholder="Enter your artist song name" id="searched-song"
-                        value="summer">
+                    <input type="text" class="form-control" placeholder="Enter your artist song name"
+                        id="searched-song">
                     <button class="btn btn-success search-btn" id="search-button"
                         onclick="searchButtonWork()">Search</button>
                 </div>
             </div>
             <!-- === Fancy results === -->
-            <div id="results"></div>
+            <div id="results">
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 class="lyrics-name" id="song-title-0"></h3>
+                        <p class="author lead" id="song-album-0"> </p>
+                        <p class="author lead" id="artist-name-0"> </p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button class="btn btn-success" onclick="getLyrics()">Get Lyrics</button>
+                    </div>
+                </div>
+                <div class="align-items-center my-3 p-3 lyrics" id="lyrics-area-0"></div>
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 class="lyrics-name" id="song-title-1"></h3>
+                        <p class="author lead" id="song-album-1"> </p>
+                        <p class="author lead" id="artist-name-1"> </p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button class="btn btn-success" onclick="getLyrics()">Get Lyrics</button>
+                    </div>
+                </div>
+                <div class="align-items-center my-3 p-3 lyrics" id="lyrics-area-1"></div>
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 class="lyrics-name" id="song-title-2"></h3>
+                        <p class="author lead" id="song-album-2"> </p>
+                        <p class="author lead" id="artist-name-2"> </p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button class="btn btn-success" onclick="getLyrics()">Get Lyrics</button>
+                    </div>
+                </div>
+                <div class="align-items-center my-3 p-3 lyrics" id="lyrics-area-2"></div>
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 class="lyrics-name" id="song-title-3"></h3>
+                        <p class="author lead" id="song-album-3"> </p>
+                        <p class="author lead" id="artist-name-3"> </p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button class="btn btn-success" onclick="getLyrics()">Get Lyrics</button>
+                    </div>
+                </div>
+                <div class="align-items-center my-3 p-3 lyrics" id="lyrics-area-3"></div>
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 class="lyrics-name" id="song-title-4"></h3>
+                        <p class="author lead" id="song-album-4"> </p>
+                        <p class="author lead" id="artist-name-4"> </p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button class="btn btn-success" onclick="getLyrics()">Get Lyrics</button>
+                    </div>
+                </div>
+                <div class="align-items-center my-3 p-3 lyrics" id="lyrics-area-4"></div>
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 class="lyrics-name" id="song-title-5"></h3>
+                        <p class="author lead" id="song-album-5"> </p>
+                        <p class="author lead" id="artist-name-5"> </p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button class="btn btn-success" onclick="getLyrics()" id="get-lyrics-button">Get
+                            Lyrics</button>
+                    </div>
+                </div>
+                <div class="align-items-center my-3 p-3 lyrics" id="lyrics-area-5"></div>
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 class="lyrics-name" id="song-title-6"></h3>
+                        <p class="author lead" id="song-album-6"> </p>
+                        <p class="author lead" id="artist-name-6"> </p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button class="btn btn-success" onclick="getLyrics()">Get Lyrics</button>
+                    </div>
+                </div>
+                <div class="align-items-center my-3 p-3 lyrics" id="lyrics-area-6"></div>
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 class="lyrics-name" id="song-title-7"></h3>
+                        <p class="author lead" id="song-album-7"> </p>
+                        <p class="author lead" id="artist-name-7"> </p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button class="btn btn-success" onclick="getLyrics()">Get Lyrics</button>
+                    </div>
+                </div>
+                <div class="align-items-center my-3 p-3 lyrics" id="lyrics-area-7"></div>
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 class="lyrics-name" id="song-title-8"></h3>
+                        <p class="author lead" id="song-album-8"> </p>
+                        <p class="author lead" id="artist-name-8"> </p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button class="btn btn-success" onclick="getLyrics()">Get Lyrics</button>
+                    </div>
+                </div>
+                <div class="align-items-center my-3 p-3 lyrics" id="lyrics-area-8"></div>
+                <div class="single-result row align-items-center my-3 p-3">
+                    <div class="col-md-9">
+                        <h3 class="lyrics-name" id="song-title-9"></h3>
+                        <p class="author lead" id="song-album-9"> </p>
+                        <p class="author lead" id="artist-name-9"> </p>
+                    </div>
+                    <div class="col-md-3 text-md-right text-center">
+                        <button class="btn btn-success" onclick="getLyrics()">Get Lyrics</button>
+                    </div>
+                </div>
+                <div class="align-items-center my-3 p-3 lyrics" id="lyrics-area-9"></div>
+            </div>
 
         </main>
     </div>
